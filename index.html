@@ -1,0 +1,995 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>IndiaCrafted - 100% Brand-Identical Production Mockup</title>
+  <script src="https://www.gstatic.com/antigravity/web/dev/tailwindcss.min.js"></script>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=EB+Garamond:ital,wght@0,400;0,500;0,600;0,700;1,400;1,600&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <style>
+    :root {
+      --color-maroon: #6b1d1d;
+      --color-maroon-hover: #521515;
+      --color-gold-ochre: #b3822a;
+      --color-charcoal: #222222;
+      --color-cream: #fdfbf7;
+      --color-beige: #f5efeb;
+      --color-slate-grey: #666666;
+      --line: #e4d9cf;
+      --line-strong: #cdbfb4;
+    }
+    body {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      background-color: #0f172a;
+    }
+    .font-editorial {
+      font-family: 'EB Garamond', Georgia, serif;
+    }
+    .hide-scrollbar::-webkit-scrollbar {
+      display: none;
+    }
+    .hide-scrollbar {
+      -ms-overflow-style: none;
+      scrollbar-width: none;
+    }
+    .site-logo-header {
+      height: 52px;
+      width: auto;
+      object-fit: contain;
+      filter: contrast(1.14) saturate(1.08) drop-shadow(0 1px 0 rgba(255, 255, 255, 0.75));
+    }
+    @media (max-width: 768px) {
+      .site-logo-header {
+        height: 38px;
+        max-width: 170px;
+      }
+    }
+    .header-action {
+      display: inline-flex;
+      align-items: center;
+      gap: 10px;
+      min-height: 48px;
+      border-left: 1px solid var(--line);
+      padding-inline: 18px;
+      color: #17110d;
+      text-align: left;
+      transition: color 0.2s ease;
+    }
+    .header-action:hover {
+      color: var(--color-maroon);
+    }
+    .header-action > span:not(.relative) {
+      display: grid;
+      font-size: 0.82rem;
+      font-weight: 800;
+      line-height: 1.15;
+    }
+    .header-action small {
+      margin-top: 3px;
+      color: var(--color-slate-grey);
+      font-size: 0.74rem;
+      font-weight: 600;
+    }
+    .ornament-title {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 18px;
+      text-align: center;
+    }
+    .ornament-title h2, .ornament-title h3 {
+      margin: 0;
+      color: #1f1710;
+      font-family: 'EB Garamond', Georgia, serif;
+      font-weight: 700;
+      letter-spacing: -0.01em;
+    }
+    .ornament-title span {
+      width: 48px;
+      height: 1px;
+      background: linear-gradient(90deg, transparent, #b3822a, transparent);
+    }
+    .category-orb {
+      flex: 0 0 auto;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      gap: 8px;
+      text-align: center;
+      max-width: 100px;
+    }
+    .category-orb span {
+      display: grid;
+      width: 76px;
+      height: 76px;
+      border-radius: 999px;
+      overflow: hidden;
+      place-items: center;
+      background: #fbf5ed;
+      border: 1px solid #e4d9cf;
+      box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04);
+      transition: transform 0.25s ease, border-color 0.25s ease;
+    }
+    .category-orb:hover span {
+      transform: scale(1.06);
+      border-color: #b3822a;
+    }
+    .category-orb img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+    }
+    .category-orb strong {
+      color: #211811;
+      font-size: 11px;
+      font-weight: 700;
+      line-height: 1.25;
+      max-width: 90px;
+    }
+    .book-card {
+      transition: transform 0.2s cubic-bezier(0.16, 1, 0.3, 1), box-shadow 0.2s cubic-bezier(0.16, 1, 0.3, 1);
+    }
+    .book-card:hover {
+      transform: translateY(-4px);
+      box-shadow: 0 12px 28px -8px rgba(107, 29, 29, 0.16);
+    }
+    .book-spine {
+      box-shadow: -2px 0 5px rgba(0,0,0,0.15) inset, 2px 2px 8px rgba(0,0,0,0.12);
+    }
+  </style>
+</head>
+<body class="text-slate-100 min-h-screen">
+
+  <!-- Top Sticky Orchestrator Bar -->
+  <header class="sticky top-0 z-50 bg-slate-950/95 backdrop-blur border-b border-slate-800 px-4 py-3">
+    <div class="max-w-7xl mx-auto flex flex-col md:flex-row items-center justify-between gap-3">
+      <div class="flex items-center gap-3">
+        <span class="px-2.5 py-1 bg-emerald-500/10 text-emerald-400 border border-emerald-500/30 rounded text-xs font-semibold uppercase tracking-wider">
+          100% Brand-Identical Assets
+        </span>
+        <h1 class="text-sm md:text-base font-bold text-white flex items-center gap-2">
+          <span>IndiaCrafted Storefront</span>
+          <span class="text-amber-300 font-normal text-xs">| Exact Logo, Colors, Category Art & EB Garamond</span>
+        </h1>
+      </div>
+
+      <!-- Viewport Switcher -->
+      <div class="flex items-center bg-slate-800/90 p-1 rounded-xl border border-slate-700/80">
+        <button id="btn-desktop" onclick="setView('desktop')" class="px-4 py-1.5 rounded-lg text-xs font-semibold transition bg-amber-600 text-white shadow-sm flex items-center gap-2">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect x="2" y="3" width="20" height="14" rx="2"/><line x1="8" y1="21" x2="16" y2="21"/><line x1="12" y1="17" x2="12" y2="21"/></svg>
+          Desktop View (1440px 5-Col)
+        </button>
+        <button id="btn-mobile" onclick="setView('mobile')" class="px-4 py-1.5 rounded-lg text-xs font-semibold transition text-slate-300 hover:text-white flex items-center gap-2">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><rect x="5" y="2" width="14" height="20" rx="2"/><line x1="12" y1="18" x2="12" y2="18"/></svg>
+          Mobile View (390px Screen 1)
+        </button>
+        <button id="btn-compare" onclick="setView('compare')" class="px-3.5 py-1.5 rounded-lg text-xs font-semibold transition text-slate-300 hover:text-white flex items-center gap-1.5">
+          <svg class="w-4 h-4" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M8 7h12m0 0l-4-4m4 4l-4 4m0 6H4m0 0l4 4m-4-4l4-4"/></svg>
+          Side-by-Side
+        </button>
+      </div>
+    </div>
+  </header>
+
+  <!-- Showcase Content Area -->
+  <main class="p-3 md:p-6 flex justify-center">
+
+    <!-- ========================================================================= -->
+    <!-- 1. DEDICATED DESKTOP STOREFRONT (Exact IndiaCrafted Production Branding)  -->
+    <!-- ========================================================================= -->
+    <div id="desktop-container" class="w-full max-w-[1400px] bg-[#fdfbf7] text-[#222222] rounded-2xl shadow-2xl overflow-hidden border border-[#cdbfb4]">
+      
+      <!-- Top Announcement Ribbon (Exact Header.tsx gradient & styling) -->
+      <div class="border-b border-[rgba(253,203,155,0.24)] bg-[linear-gradient(90deg,#521515,#6b1d1d,#521515)] text-xs md:text-[13px] text-[#f2f1ec] py-1.5 px-8">
+        <div class="max-w-6xl mx-auto flex items-center justify-between">
+          <div class="inline-flex items-center gap-2 hover:underline cursor-pointer">
+            <svg width="14" height="14" viewBox="0 0 24 24" fill="none" aria-hidden>
+              <path d="M12 3l2.1 4.2 4.6.7-3.3 3.2.8 4.6-4.2-2.2-4.2 2.2.8-4.6-3.3-3.2 4.6-.7L12 3Z" stroke="currentColor" strokeWidth="1.5" strokeLinejoin="round"/>
+            </svg>
+            <span>⚡ Buy More, Save More: Up to 50% Volume Discount • Free on orders above $59.00</span>
+          </div>
+          <div class="flex items-center gap-5 text-xs font-medium text-white/95">
+            <span class="inline-flex items-center gap-1.5 cursor-pointer hover:text-amber-200 transition">
+              <span>📍</span>
+              <span>Delivering to:</span>
+              <span class="font-semibold underline underline-offset-2 decoration-white/40">United States</span>
+              <span class="text-white/80">(USD)</span>
+              <svg class="w-3.5 h-3.5 opacity-75" viewBox="0 0 20 20" fill="currentColor"><path fill-rule="evenodd" d="M5.23 7.21a.75.75 0 011.06.02L10 11.168l3.71-3.938a.75.75 0 111.08 1.04l-4.25 4.5a.75.75 0 01-1.08 0l-4.25-4.5a.75.75 0 01.02-1.06z" clip-rule="evenodd"/></svg>
+            </span>
+            <span class="hover:text-white cursor-pointer">Track Order</span>
+            <span class="hover:text-white cursor-pointer">Help &amp; Support</span>
+            <span class="hover:text-white cursor-pointer">Bulk Orders</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Main Desktop Header (Exact #faf6ef ivory background & Header.tsx layout) -->
+      <div class="bg-[#faf6ef] px-8 py-3.5 border-b border-[#e4d9cf]">
+        <div class="max-w-6xl mx-auto flex items-center justify-between gap-6">
+          
+          <!-- Exact Brand Logo -->
+          <div class="flex items-center shrink-0">
+            <img src="logo-horizontal.png" alt="IndiaCrafted" class="site-logo-header" width="260" height="74">
+          </div>
+
+          <!-- Exact Search Box with Command-K -->
+          <div class="flex-1 max-w-xl mx-4">
+            <div class="relative flex items-center bg-white border border-[#cdbfb4] rounded focus-within:border-[#6b1d1d] focus-within:ring-2 focus-within:ring-[#6b1d1d]/10 transition shadow-2xs">
+              <input type="text" placeholder="Search for products, categories..." class="w-full bg-transparent px-3.5 py-2.5 text-sm text-slate-800 placeholder-stone-400 focus:outline-none">
+              <kbd class="hidden lg:inline-flex items-center pointer-events-none select-none absolute right-14 top-1/2 -translate-y-1/2 px-1.5 py-0.5 text-[10px] font-medium text-stone-700 bg-stone-100 border border-stone-300 rounded shadow-2xs">
+                ⌘K
+              </kbd>
+              <button class="bg-[#6b1d1d] hover:bg-[#521515] text-white w-11 h-10 flex items-center justify-center shrink-0 transition active:scale-95">
+                <svg width="18" height="18" viewBox="0 0 24 24" fill="none" aria-hidden>
+                  <path d="M21 21L16.65 16.65M10.8 18A7.2 7.2 0 1 1 10.8 3.6a7.2 7.2 0 0 1 0 14.4Z" stroke="currentColor" stroke-width="1.9" stroke-linecap="round"/>
+                </svg>
+              </button>
+            </div>
+          </div>
+
+          <!-- Exact Header Actions (Sign In, Wishlist, Cart) -->
+          <div class="flex items-center header-actions shrink-0">
+            <div class="header-action cursor-pointer">
+              <svg width="28" height="28" viewBox="0 0 24 24" fill="none" aria-hidden>
+                <path d="M20 21a8 8 0 0 0-16 0M12 12a4.5 4.5 0 1 0 0-9 4.5 4.5 0 0 0 0 9Z" stroke="currentColor" stroke-width="1.6" stroke-linecap="round"/>
+              </svg>
+              <span>Sign In<small>Account</small></span>
+            </div>
+
+            <div class="header-action cursor-pointer">
+              <span class="relative">
+                <svg width="30" height="30" viewBox="0 0 24 24" fill="none" aria-hidden>
+                  <path d="M12 20s-7.2-4.2-9.2-9.1C1.4 7.6 3.5 4 7 4c2 0 3.4 1.1 5 3.1C13.6 5.1 15 4 17 4c3.5 0 5.6 3.6 4.2 6.9C19.2 15.8 12 20 12 20Z" stroke="currentColor" stroke-width="1.45" stroke-linejoin="round"/>
+                </svg>
+              </span>
+              <span>Wishlist<small>0 Favorites</small></span>
+            </div>
+
+            <div class="header-action cursor-pointer">
+              <span class="relative text-[#6b1d1d]">
+                <svg width="32" height="32" viewBox="0 0 24 24" fill="none" aria-hidden>
+                  <path d="M6.5 7.5h13l-1.1 12h-11L6.5 7.5ZM9 7.5a3 3 0 0 1 6 0" stroke="currentColor" stroke-width="1.5" stroke-linejoin="round"/>
+                </svg>
+                <span class="absolute -top-1 -right-1 bg-[#6b1d1d] text-white text-[10px] font-bold rounded-full w-4 h-4 flex items-center justify-center shadow-xs">0</span>
+              </span>
+              <span>My Cart<small>0 Items</small></span>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+      <!-- Exact 8-Item Menu Bar (From Navbar.tsx / megaMenuData.ts) -->
+      <nav class="bg-[#faf6ef] border-b border-[#e4d9cf] px-8 py-2.5">
+        <div class="max-w-6xl mx-auto flex items-center justify-between text-[13px] font-bold text-slate-800 tracking-wide">
+          <div class="flex items-center space-x-7">
+            <a href="#" class="text-[#6b1d1d] font-extrabold flex items-center gap-1 border-b-2 border-[#6b1d1d] pb-0.5">
+              BOOKS
+              <svg class="w-3 h-3 text-[#6b1d1d]" fill="none" stroke="currentColor" viewBox="0 0 24 24"><path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M19 9l-7 7-7-7"/></svg>
+            </a>
+            <a href="#" class="hover:text-[#6b1d1d] transition">RELIGION &amp; SCRIPTURES</a>
+            <a href="#" class="hover:text-[#6b1d1d] transition">CHILDREN'S BOOKS</a>
+            <a href="#" class="hover:text-[#6b1d1d] transition">HISTORY &amp; PHILOSOPHY</a>
+            <a href="#" class="hover:text-[#6b1d1d] transition">FICTION &amp; LITERATURE</a>
+            <a href="#" class="hover:text-[#6b1d1d] flex items-center gap-1 transition">
+              NEW ARRIVALS
+              <span class="bg-emerald-100 text-emerald-800 text-[9px] font-bold px-1.5 py-0.2 rounded">NEW</span>
+            </a>
+            <a href="#" class="text-[#6b1d1d] hover:text-[#521515] flex items-center gap-1.5 transition">
+              <span class="w-2 h-2 rounded-full bg-[#6b1d1d] animate-pulse"></span>
+              SALE
+            </a>
+            <a href="#" class="hover:text-[#6b1d1d] transition">STORIES</a>
+          </div>
+          <div class="flex items-center text-xs text-[#b3822a] font-semibold gap-1">
+            <svg class="w-3.5 h-3.5 text-[#b3822a]" fill="currentColor" viewBox="0 0 20 20"><path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z"/></svg>
+            <span>56,000+ Indian Titles Cataloged</span>
+          </div>
+        </div>
+      </nav>
+
+      <!-- PROPER DESKTOP SPLIT HERO WITH REAL HERO BACKGROUND IMAGE -->
+      <section class="relative overflow-hidden min-h-[380px] flex items-center bg-[#16100a]">
+        <!-- Real Background Image with Gradient Overlay -->
+        <img src="books-banner.png" alt="Books Collection Banner" class="absolute inset-0 w-full h-full object-cover opacity-35">
+        <div class="absolute inset-0" style="background: linear-gradient(90deg, rgba(22,16,10,0.98) 0%, rgba(22,16,10,0.9) 45%, rgba(22,16,10,0.4) 75%, rgba(22,16,10,0.1) 100%);"></div>
+
+        <div class="max-w-6xl mx-auto w-full px-8 py-10 relative z-10 grid grid-cols-12 gap-8 items-center">
+          
+          <!-- Left Column (7 Cols) -->
+          <div class="col-span-7 space-y-4">
+            <span class="inline-block px-3 py-1 rounded-full bg-[#e7bd79]/15 border border-[#e7bd79]/30 text-xs font-bold text-[#e7bd79] uppercase tracking-wider">
+              ✦ Dedicated Export Fulfillment Direct from India
+            </span>
+            <h1 class="text-3xl lg:text-4xl font-editorial font-bold text-[#f8e8d1] leading-tight m-0">
+              Timeless Wisdom,<br />
+              <span class="text-[#e7bd79]">Delivered Worldwide.</span>
+            </h1>
+            <p class="text-sm text-[#ead6bd] leading-relaxed max-w-xl font-editorial text-base m-0">
+              Over 55,000 authentic sacred texts, profound philosophical treatises, history, and children's heritage books — shipped directly to diaspora homes across 100+ countries.
+            </p>
+            
+            <div class="flex items-center gap-3 pt-2">
+              <a href="#featured-bestsellers" class="bg-[#b3822a] hover:bg-[#94681e] text-white font-bold px-6 py-2.5 rounded-lg text-xs tracking-wide shadow-md transition inline-flex items-center gap-2">
+                <span>Explore Literature Collection</span>
+                <span>→</span>
+              </a>
+              <a href="#new-arrivals-section" class="bg-white/10 hover:bg-white/20 text-[#f8e8d1] font-semibold px-5 py-2.5 rounded-lg text-xs border border-white/20 transition">
+                Shop Sacred Texts
+              </a>
+            </div>
+
+            <div class="pt-2 flex items-center gap-5 text-xs text-[#ead6bd] font-medium">
+              <span>✓ Authentic Publisher Editions</span>
+              <span>•</span>
+              <span>✓ 150+ Countries Air Express</span>
+              <span>•</span>
+              <span>✓ Free on Orders Above $59.00</span>
+            </div>
+          </div>
+
+          <!-- Right Column (5 Cols): Dual Real DB Product Spotlight -->
+          <div class="col-span-5 grid grid-cols-2 gap-4">
+            
+            <!-- Spotlight 1: ACK Boxset (ID 2707) -->
+            <div class="bg-stone-900/90 border border-[#b3822a]/40 rounded-xl p-3.5 shadow-xl flex flex-col justify-between book-card backdrop-blur-sm">
+              <div>
+                <div class="flex items-center justify-between text-[10px] font-bold text-amber-300 uppercase mb-2">
+                  <span>Children's Heritage</span>
+                  <span class="bg-[#521515] text-red-200 px-1.5 py-0.5 rounded">ID: 2707</span>
+                </div>
+                <div class="bg-stone-800/80 rounded-lg p-2 mb-2 flex justify-center">
+                  <img src="https://storage.googleapis.com/india-crafted-media/products/2707/originals/a088d6bd-0a7e-4224-8647-baa0046d6e8e_medium.webp" alt="ACK" class="h-28 object-contain rounded book-spine">
+                </div>
+                <h4 class="text-white font-bold text-xs line-clamp-1 font-editorial text-sm">Amar Chitra Katha Boxset</h4>
+                <p class="text-[10px] text-slate-400">Amar Chitra Katha</p>
+              </div>
+              <div class="pt-2 mt-1 border-t border-slate-800 flex items-center justify-between">
+                <span class="text-[#e7bd79] font-extrabold text-sm">$19.55</span>
+                <button class="bg-[#b3822a] hover:bg-[#94681e] text-white text-[11px] px-3 py-1 rounded font-bold transition">Add</button>
+              </div>
+            </div>
+
+            <!-- Spotlight 2: Gita for CEO (ID 3107) -->
+            <div class="bg-stone-900/90 border border-[#b3822a]/40 rounded-xl p-3.5 shadow-xl flex flex-col justify-between book-card backdrop-blur-sm">
+              <div>
+                <div class="flex items-center justify-between text-[10px] font-bold text-amber-300 uppercase mb-2">
+                  <span>Sacred Scripture</span>
+                  <span class="bg-[#521515] text-amber-200 px-1.5 py-0.5 rounded">ID: 3107</span>
+                </div>
+                <div class="bg-stone-800/80 rounded-lg p-2 mb-2 flex justify-center">
+                  <img src="https://storage.googleapis.com/india-crafted-media/products/3107/originals/2c6c5b2c-37d3-4cee-944f-add8422c5f6a_medium.webp" alt="Gita" class="h-28 object-contain rounded book-spine">
+                </div>
+                <h4 class="text-white font-bold text-xs line-clamp-1 font-editorial text-sm">Gita for the CEO</h4>
+                <p class="text-[10px] text-slate-400">Chaitanya Charan</p>
+              </div>
+              <div class="pt-2 mt-1 border-t border-slate-800 flex items-center justify-between">
+                <span class="text-[#e7bd79] font-extrabold text-sm">$19.55</span>
+                <button class="bg-[#b3822a] hover:bg-[#94681e] text-white text-[11px] px-3 py-1 rounded font-bold transition">Add</button>
+              </div>
+            </div>
+
+          </div>
+
+        </div>
+      </section>
+
+      <!-- Exact Service Strip from Home.tsx -->
+      <section class="border-y border-[#e4d9cf] bg-white py-4 px-8">
+        <div class="max-w-6xl mx-auto grid grid-cols-5 divide-x divide-[#e4d9cf] text-xs">
+          <div class="px-3 flex items-center gap-3">
+            <span class="text-[#6b1d1d] text-lg">🚚</span>
+            <div>
+              <p class="font-bold text-[#1f1710] m-0">Worldwide Shipping</p>
+              <span class="text-[#666666] text-[11px]">Free over $59.00</span>
+            </div>
+          </div>
+          <div class="px-3 flex items-center gap-3">
+            <span class="text-[#6b1d1d] text-lg">🛡️</span>
+            <div>
+              <p class="font-bold text-[#1f1710] m-0">100% Authentic</p>
+              <span class="text-[#666666] text-[11px]">Genuine Products</span>
+            </div>
+          </div>
+          <div class="px-3 flex items-center gap-3">
+            <span class="text-[#6b1d1d] text-lg">🔒</span>
+            <div>
+              <p class="font-bold text-[#1f1710] m-0">Secure Payments</p>
+              <span class="text-[#666666] text-[11px]">Safe &amp; Trusted</span>
+            </div>
+          </div>
+          <div class="px-3 flex items-center gap-3">
+            <span class="text-[#6b1d1d] text-lg">🤝</span>
+            <div>
+              <p class="font-bold text-[#1f1710] m-0">Artisan Support</p>
+              <span class="text-[#666666] text-[11px]">Empowering Heritage</span>
+            </div>
+          </div>
+          <div class="px-3 flex items-center gap-3">
+            <span class="text-[#6b1d1d] text-lg">🔄</span>
+            <div>
+              <p class="font-bold text-[#1f1710] m-0">Easy Returns</p>
+              <span class="text-[#666666] text-[11px]">Within 7 Days</span>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- Category Orbs Section with EXACT WEBP ARTWORK from frontend assets -->
+      <section class="py-7 px-8 bg-[#fdfbf7]">
+        <div class="max-w-6xl mx-auto">
+          <div class="ornament-title mb-5">
+            <span></span>
+            <h2>Shop By Category</h2>
+            <span></span>
+          </div>
+
+          <div class="flex items-start justify-between gap-2 overflow-x-auto hide-scrollbar">
+            <!-- 1. Books -->
+            <div class="category-orb cursor-pointer">
+              <span><img src="categories/books.webp" alt="Books"></span>
+              <strong>Books</strong>
+            </div>
+
+            <!-- 2. Academic -->
+            <div class="category-orb cursor-pointer">
+              <span><img src="categories/art-craft-books.webp" alt="Academic"></span>
+              <strong>Academic</strong>
+            </div>
+
+            <!-- 3. Fiction -->
+            <div class="category-orb cursor-pointer">
+              <span><img src="categories/fiction-literature.webp" alt="Fiction"></span>
+              <strong>Fiction</strong>
+            </div>
+
+            <!-- 4. Non-Fiction -->
+            <div class="category-orb cursor-pointer">
+              <span><img src="categories/biographies-memoirs.webp" alt="Non-Fiction"></span>
+              <strong>Non-Fiction</strong>
+            </div>
+
+            <!-- 5. Children -->
+            <div class="category-orb cursor-pointer">
+              <span><img src="categories/childrens-books.webp" alt="Children"></span>
+              <strong>Children</strong>
+            </div>
+
+            <!-- 6. Competitive Exams -->
+            <div class="category-orb cursor-pointer">
+              <span><img src="categories/language-learning.webp" alt="Competitive Exams"></span>
+              <strong>Comp. Exams</strong>
+            </div>
+
+            <!-- 7. Religion -->
+            <div class="category-orb cursor-pointer">
+              <span><img src="categories/religion-scriptures.webp" alt="Religion"></span>
+              <strong>Religion</strong>
+            </div>
+
+            <!-- 8. Maps & Atlases -->
+            <div class="category-orb cursor-pointer">
+              <span><img src="categories/indian-history.webp" alt="Maps & Atlases"></span>
+              <strong>Maps &amp; Atlases</strong>
+            </div>
+
+            <!-- 9. New Arrivals -->
+            <div class="category-orb cursor-pointer">
+              <span><img src="categories/new-arrivals.webp" alt="New Arrivals"></span>
+              <strong>New Arrivals</strong>
+            </div>
+
+            <!-- 10. Sale -->
+            <div class="category-orb cursor-pointer">
+              <span><img src="categories/sale.webp" alt="Sale"></span>
+              <strong>Sale</strong>
+            </div>
+
+            <!-- 11. Stories -->
+            <div class="category-orb cursor-pointer">
+              <span><img src="categories/scriptures-philosophy.webp" alt="Stories"></span>
+              <strong>Stories</strong>
+            </div>
+          </div>
+        </div>
+      </section>
+
+      <!-- PROPER 5-COLUMN PRODUCT MERCHANDISING GRIDS -->
+      <div class="px-8 pb-10 max-w-6xl mx-auto space-y-12">
+        
+        <!-- SECTION 1: TRENDING BESTSELLERS (5 Columns) -->
+        <section id="featured-bestsellers">
+          <div class="flex items-end justify-between mb-5 border-b border-[#e4d9cf] pb-3">
+            <div>
+              <span class="text-xs font-bold text-[#6b1d1d] uppercase tracking-widest">Revered Heritage</span>
+              <h3 class="text-2xl font-editorial font-bold text-[#222222] mt-0.5">🔥 Trending Diaspora Bestsellers</h3>
+            </div>
+            <a href="#" class="text-xs font-bold text-[#6b1d1d] hover:text-[#521515] transition">View All 56,000 Titles →</a>
+          </div>
+
+          <div class="grid grid-cols-5 gap-4">
+            <!-- Book 1 -->
+            <div class="bg-white rounded-lg p-3 border border-[#e4d9cf] shadow-xs book-card flex flex-col justify-between">
+              <div>
+                <div class="relative bg-[#fbf5ed] rounded p-2 mb-2.5 flex justify-center">
+                  <img src="https://storage.googleapis.com/india-crafted-media/products/3107/originals/2c6c5b2c-37d3-4cee-944f-add8422c5f6a_medium.webp" alt="Gita" class="h-38 object-contain rounded book-spine">
+                  <span class="absolute top-1 left-1 bg-[#b3822a] text-white text-[9px] font-bold px-1.5 py-0.5 rounded">Scripture</span>
+                </div>
+                <h4 class="font-bold text-xs text-stone-900 line-clamp-2 leading-snug font-editorial text-sm">Gita for the CEO</h4>
+                <p class="text-[11px] text-[#666666] mt-0.5">Chaitanya Charan</p>
+              </div>
+              <div class="pt-2.5 mt-2 border-t border-[#f5efeb] flex items-center justify-between">
+                <span class="font-extrabold text-[#6b1d1d] text-sm">$19.55</span>
+                <button class="bg-[#6b1d1d] hover:bg-[#521515] text-white text-xs px-3 py-1 rounded font-bold transition">Add</button>
+              </div>
+            </div>
+
+            <!-- Book 2 -->
+            <div class="bg-white rounded-lg p-3 border border-[#e4d9cf] shadow-xs book-card flex flex-col justify-between">
+              <div>
+                <div class="relative bg-[#fbf5ed] rounded p-2 mb-2.5 flex justify-center">
+                  <img src="https://storage.googleapis.com/india-crafted-media/products/2707/originals/a088d6bd-0a7e-4224-8647-baa0046d6e8e_medium.webp" alt="ACK" class="h-38 object-contain rounded book-spine">
+                  <span class="absolute top-1 left-1 bg-[#6b1d1d] text-white text-[9px] font-bold px-1.5 py-0.5 rounded">Children</span>
+                </div>
+                <h4 class="font-bold text-xs text-stone-900 line-clamp-2 leading-snug font-editorial text-sm">Amar Chitra Katha Boxset</h4>
+                <p class="text-[11px] text-[#666666] mt-0.5">Amar Chitra Katha</p>
+              </div>
+              <div class="pt-2.5 mt-2 border-t border-[#f5efeb] flex items-center justify-between">
+                <span class="font-extrabold text-[#6b1d1d] text-sm">$19.55</span>
+                <button class="bg-[#6b1d1d] hover:bg-[#521515] text-white text-xs px-3 py-1 rounded font-bold transition">Add</button>
+              </div>
+            </div>
+
+            <!-- Book 3 -->
+            <div class="bg-white rounded-lg p-3 border border-[#e4d9cf] shadow-xs book-card flex flex-col justify-between">
+              <div>
+                <div class="relative bg-[#fbf5ed] rounded p-2 mb-2.5 flex justify-center">
+                  <img src="https://storage.googleapis.com/india-crafted-media/products/3923/originals/bb0cdb42-2e38-440e-a1d2-16b034e04c33_medium.webp" alt="Ramayana" class="h-38 object-contain rounded book-spine">
+                  <span class="absolute top-1 left-1 bg-[#6b1d1d] text-white text-[9px] font-bold px-1.5 py-0.5 rounded">Epic</span>
+                </div>
+                <h4 class="font-bold text-xs text-stone-900 line-clamp-2 leading-snug font-editorial text-sm">In Footsteps of Rama</h4>
+                <p class="text-[11px] text-[#666666] mt-0.5">Anand Neelkantan</p>
+              </div>
+              <div class="pt-2.5 mt-2 border-t border-[#f5efeb] flex items-center justify-between">
+                <span class="font-extrabold text-[#6b1d1d] text-sm">$23.47</span>
+                <button class="bg-[#6b1d1d] hover:bg-[#521515] text-white text-xs px-3 py-1 rounded font-bold transition">Add</button>
+              </div>
+            </div>
+
+            <!-- Book 4 -->
+            <div class="bg-white rounded-lg p-3 border border-[#e4d9cf] shadow-xs book-card flex flex-col justify-between">
+              <div>
+                <div class="relative bg-[#fbf5ed] rounded p-2 mb-2.5 flex justify-center">
+                  <img src="https://storage.googleapis.com/india-crafted-media/products/2825/originals/533fc2dc-13a9-4e94-91e6-eb397363fb49_medium.webp" alt="Sanskrit" class="h-38 object-contain rounded book-spine">
+                  <span class="absolute top-1 left-1 bg-purple-700 text-white text-[9px] font-bold px-1.5 py-0.5 rounded">Sanskrit</span>
+                </div>
+                <h4 class="font-bold text-xs text-stone-900 line-clamp-2 leading-snug font-editorial text-sm">Learn Sanskrit: Stotra Ranjani</h4>
+                <p class="text-[11px] text-[#666666] mt-0.5">Rohini Bhakshi</p>
+              </div>
+              <div class="pt-2.5 mt-2 border-t border-[#f5efeb] flex items-center justify-between">
+                <span class="font-extrabold text-[#6b1d1d] text-sm">$31.30</span>
+                <button class="bg-[#6b1d1d] hover:bg-[#521515] text-white text-xs px-3 py-1 rounded font-bold transition">Add</button>
+              </div>
+            </div>
+
+            <!-- Book 5 -->
+            <div class="bg-white rounded-lg p-3 border border-[#e4d9cf] shadow-xs book-card flex flex-col justify-between">
+              <div>
+                <div class="relative bg-[#fbf5ed] rounded p-2 mb-2.5 flex justify-center">
+                  <img src="https://storage.googleapis.com/india-crafted-media/products/3295/originals/86c626b7-1a54-4a61-bf82-03e2d534a736_medium.webp" alt="Yoga" class="h-38 object-contain rounded book-spine">
+                  <span class="absolute top-1 left-1 bg-emerald-700 text-white text-[9px] font-bold px-1.5 py-0.5 rounded">Yoga</span>
+                </div>
+                <h4 class="font-bold text-xs text-stone-900 line-clamp-2 leading-snug font-editorial text-sm">Yoga Mythology: 64 Asanas</h4>
+                <p class="text-[11px] text-[#666666] mt-0.5">Devdutt Pattanaik</p>
+              </div>
+              <div class="pt-2.5 mt-2 border-t border-[#f5efeb] flex items-center justify-between">
+                <span class="font-extrabold text-[#6b1d1d] text-sm">$19.55</span>
+                <button class="bg-[#6b1d1d] hover:bg-[#521515] text-white text-xs px-3 py-1 rounded font-bold transition">Add</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+        <!-- SECTION 2: NEW ARRIVALS FROM PRODUCTION SYNC (5 Columns) -->
+        <section id="new-arrivals-section">
+          <div class="flex items-end justify-between mb-5 border-b border-[#e4d9cf] pb-3">
+            <div>
+              <span class="text-xs font-bold text-emerald-800 uppercase tracking-widest">Fresh From Publisher Presses</span>
+              <h3 class="text-2xl font-editorial font-bold text-[#222222] mt-0.5">✨ New Arrivals from Production</h3>
+            </div>
+            <a href="#" class="text-xs font-bold text-emerald-800 hover:text-emerald-900 transition">Explore New Arrivals →</a>
+          </div>
+
+          <div class="grid grid-cols-5 gap-4">
+            <!-- 59481 -->
+            <div class="bg-white rounded-lg p-3 border border-[#e4d9cf] shadow-xs book-card flex flex-col justify-between">
+              <div>
+                <div class="relative bg-[#fbf5ed] rounded p-2 mb-2.5 flex justify-center">
+                  <img src="https://storage.googleapis.com/india-crafted-media/products/59481/originals/075a66c4-cfaf-4585-9a99-c0f73212ec98_medium.webp" alt="Theatre" class="h-38 object-contain rounded book-spine">
+                  <span class="absolute top-1 left-1 bg-emerald-700 text-white text-[9px] font-bold px-1.5 py-0.5 rounded">ID: 59481</span>
+                </div>
+                <h4 class="font-bold text-xs text-stone-900 line-clamp-2 leading-snug font-editorial text-sm">The Poetics of Theatre in Early India</h4>
+                <p class="text-[11px] text-[#666666] mt-0.5">Dhananjay Singh</p>
+              </div>
+              <div class="pt-2.5 mt-2 border-t border-[#f5efeb] flex items-center justify-between">
+                <span class="font-extrabold text-[#6b1d1d] text-sm">$31.40</span>
+                <button class="bg-[#6b1d1d] hover:bg-[#521515] text-white text-xs px-3 py-1 rounded font-bold transition">Add</button>
+              </div>
+            </div>
+
+            <!-- 59478 -->
+            <div class="bg-white rounded-lg p-3 border border-[#e4d9cf] shadow-xs book-card flex flex-col justify-between">
+              <div>
+                <div class="relative bg-[#fbf5ed] rounded p-2 mb-2.5 flex justify-center">
+                  <img src="https://storage.googleapis.com/india-crafted-media/products/59478/originals/ec35051d-9f56-497c-a539-e2834573686a_medium.webp" alt="Jungle" class="h-38 object-contain rounded book-spine">
+                  <span class="absolute top-1 left-1 bg-emerald-700 text-white text-[9px] font-bold px-1.5 py-0.5 rounded">ID: 59478</span>
+                </div>
+                <h4 class="font-bold text-xs text-stone-900 line-clamp-2 leading-snug font-editorial text-sm">Shor Macha Jungle Me</h4>
+                <p class="text-[11px] text-[#666666] mt-0.5">Jagdish Joshi</p>
+              </div>
+              <div class="pt-2.5 mt-2 border-t border-[#f5efeb] flex items-center justify-between">
+                <span class="font-extrabold text-[#6b1d1d] text-sm">$14.99</span>
+                <button class="bg-[#6b1d1d] hover:bg-[#521515] text-white text-xs px-3 py-1 rounded font-bold transition">Add</button>
+              </div>
+            </div>
+
+            <!-- 59476 -->
+            <div class="bg-white rounded-lg p-3 border border-[#e4d9cf] shadow-xs book-card flex flex-col justify-between">
+              <div>
+                <div class="relative bg-[#fbf5ed] rounded p-2 mb-2.5 flex justify-center">
+                  <img src="https://storage.googleapis.com/india-crafted-media/products/59476/originals/b5800eee-18cf-4fdd-880b-ef63c1ddea38_medium.webp" alt="Transcendent" class="h-38 object-contain rounded book-spine">
+                  <span class="absolute top-1 left-1 bg-emerald-700 text-white text-[9px] font-bold px-1.5 py-0.5 rounded">ID: 59476</span>
+                </div>
+                <h4 class="font-bold text-xs text-stone-900 line-clamp-2 leading-snug font-editorial text-sm">Paramarthagite</h4>
+                <p class="text-[11px] text-[#666666] mt-0.5">Swami Sahajananda</p>
+              </div>
+              <div class="pt-2.5 mt-2 border-t border-[#f5efeb] flex items-center justify-between">
+                <span class="font-extrabold text-[#6b1d1d] text-sm">$14.99</span>
+                <button class="bg-[#6b1d1d] hover:bg-[#521515] text-white text-xs px-3 py-1 rounded font-bold transition">Add</button>
+              </div>
+            </div>
+
+            <!-- 59475 -->
+            <div class="bg-white rounded-lg p-3 border border-[#e4d9cf] shadow-xs book-card flex flex-col justify-between">
+              <div>
+                <div class="relative bg-[#fbf5ed] rounded p-2 mb-2.5 flex justify-center">
+                  <img src="https://storage.googleapis.com/india-crafted-media/products/59475/originals/77e91f10-a827-4799-b1c6-b90607c18886_medium.webp" alt="Kaverippakkam" class="h-38 object-contain rounded book-spine">
+                  <span class="absolute top-1 left-1 bg-emerald-700 text-white text-[9px] font-bold px-1.5 py-0.5 rounded">ID: 59475</span>
+                </div>
+                <h4 class="font-bold text-xs text-stone-900 line-clamp-2 leading-snug font-editorial text-sm">Kāvērippākkam: Art</h4>
+                <p class="text-[11px] text-[#666666] mt-0.5">Srinivasa Desikan</p>
+              </div>
+              <div class="pt-2.5 mt-2 border-t border-[#f5efeb] flex items-center justify-between">
+                <span class="font-extrabold text-[#6b1d1d] text-sm">$17.66</span>
+                <button class="bg-[#6b1d1d] hover:bg-[#521515] text-white text-xs px-3 py-1 rounded font-bold transition">Add</button>
+              </div>
+            </div>
+
+            <!-- 59477 -->
+            <div class="bg-white rounded-lg p-3 border border-[#e4d9cf] shadow-xs book-card flex flex-col justify-between">
+              <div>
+                <div class="relative bg-[#fbf5ed] rounded p-2 mb-2.5 flex justify-center">
+                  <img src="https://storage.googleapis.com/india-crafted-media/products/59477/originals/53dd264d-5afa-48e3-9c10-dea945f10a4a_thumbnail.webp" alt="Parinam" class="h-38 object-contain rounded book-spine">
+                  <span class="absolute top-1 left-1 bg-emerald-700 text-white text-[9px] font-bold px-1.5 py-0.5 rounded">ID: 59477</span>
+                </div>
+                <h4 class="font-bold text-xs text-stone-900 line-clamp-2 leading-snug font-editorial text-sm">Parinam Aur Sone Ki Tikiya</h4>
+                <p class="text-[11px] text-[#666666] mt-0.5">Hindi Classics</p>
+              </div>
+              <div class="pt-2.5 mt-2 border-t border-[#f5efeb] flex items-center justify-between">
+                <span class="font-extrabold text-[#6b1d1d] text-sm">$14.99</span>
+                <button class="bg-[#6b1d1d] hover:bg-[#521515] text-white text-xs px-3 py-1 rounded font-bold transition">Add</button>
+              </div>
+            </div>
+          </div>
+        </section>
+
+      </div>
+
+      <!-- Exact Footer from Footer.tsx (#efe5d6 Background with logo-square.webp) -->
+      <footer class="mt-8 border-t border-[#e4d9cf] bg-[#efe5d6] text-[#554a3d]">
+        <!-- 4-Stat Top Bar -->
+        <div class="max-w-6xl mx-auto grid grid-cols-4 gap-4 border-b border-[#e4d9cf] py-5 px-8 text-sm">
+          <div><strong class="text-stone-900">150+ Countries</strong><br /><span class="text-xs text-[#666666]">Shipping Worldwide</span></div>
+          <div><strong class="text-stone-900">Easy Returns</strong><br /><span class="text-xs text-[#666666]">Within 7 Days</span></div>
+          <div><strong class="text-stone-900">24/7 Support</strong><br /><span class="text-xs text-[#666666]">Always Here</span></div>
+          <div><strong class="text-stone-900">Bulk Orders</strong><br /><span class="text-xs text-[#666666]">Best Wholesale Prices</span></div>
+        </div>
+
+        <!-- Main Footer Links Grid -->
+        <div class="max-w-6xl mx-auto grid grid-cols-5 gap-8 py-8 px-8">
+          <!-- Col 1: Brand & Newsletter -->
+          <div class="col-span-2 space-y-3">
+            <div class="flex items-center gap-3">
+              <img src="logo-square.webp" alt="IndiaCrafted" class="w-10 h-10 object-contain rounded" width="40" height="40">
+              <div>
+                <span class="font-editorial font-bold text-xl block text-stone-900 leading-tight">IndiaCrafted</span>
+                <p class="text-[10px] text-[#666666] font-medium m-0">Cherished Worldwide</p>
+              </div>
+            </div>
+            <p class="text-xs text-[#666666] max-w-sm m-0">Subscribe for IndiaCrafted drops, stories, and private offers.</p>
+            <div class="flex items-center gap-2 max-w-sm">
+              <input type="email" placeholder="Enter your email" class="bg-white border border-[#cdbfb4] rounded px-3 py-1.5 text-xs text-stone-800 flex-1 focus:outline-none focus:border-[#6b1d1d]">
+              <button class="bg-[#222222] hover:bg-[#6b1d1d] text-white px-4 py-1.5 text-xs font-bold rounded transition">Subscribe</button>
+            </div>
+          </div>
+
+          <!-- Col 2: Shop -->
+          <div>
+            <h3 class="text-xs uppercase tracking-wider font-bold text-stone-900 mb-2.5">Shop</h3>
+            <ul class="space-y-1.5 text-xs text-[#666666]">
+              <li><a href="#" class="hover:text-[#6b1d1d]">IndiaCrafted Collections</a></li>
+              <li><a href="#" class="hover:text-[#6b1d1d]">New Arrivals</a></li>
+              <li><a href="#" class="hover:text-[#6b1d1d]">Best Sellers</a></li>
+              <li><a href="#" class="hover:text-[#6b1d1d]">Festive Offers</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 3: Help -->
+          <div>
+            <h3 class="text-xs uppercase tracking-wider font-bold text-stone-900 mb-2.5">Help</h3>
+            <ul class="space-y-1.5 text-xs text-[#666666]">
+              <li><a href="#" class="hover:text-[#6b1d1d]">Track Order</a></li>
+              <li><a href="#" class="hover:text-[#6b1d1d]">Returns</a></li>
+              <li><a href="#" class="hover:text-[#6b1d1d]">Shipping Policy</a></li>
+              <li><a href="#" class="hover:text-[#6b1d1d]">FAQs</a></li>
+            </ul>
+          </div>
+
+          <!-- Col 4: About -->
+          <div>
+            <h3 class="text-xs uppercase tracking-wider font-bold text-stone-900 mb-2.5">About</h3>
+            <ul class="space-y-1.5 text-xs text-[#666666]">
+              <li><a href="#" class="hover:text-[#6b1d1d]">Stories &amp; Blog</a></li>
+              <li><a href="#" class="hover:text-[#6b1d1d]">Sell with us</a></li>
+              <li><a href="#" class="hover:text-[#6b1d1d]">Sustainability</a></li>
+              <li><a href="#" class="hover:text-[#6b1d1d]">Contact Us</a></li>
+            </ul>
+          </div>
+        </div>
+
+        <div class="max-w-6xl mx-auto pt-4 pb-6 px-8 border-t border-[#e4d9cf] flex justify-between items-center text-[11px] text-[#666666]">
+          <div>© 2026 IndiaCrafted. Crafted in India. Cherished Worldwide.</div>
+          <div class="flex gap-4">
+            <span>Privacy Policy</span>
+            <span>Terms of Service</span>
+            <span>Shipping Terms</span>
+          </div>
+        </div>
+      </footer>
+
+    </div>
+
+    <!-- ========================================================================= -->
+    <!-- 2. REFINED MOBILE STOREFRONT (Exact Mobile Header & Screen 1 Density)     -->
+    <!-- ========================================================================= -->
+    <div id="mobile-container" class="w-full max-w-[390px] hidden">
+      <div class="bg-[#fdfbf7] text-[#222222] rounded-3xl shadow-2xl overflow-hidden border-4 border-slate-700/80">
+        
+        <!-- Mobile Top Dispatch Ribbon (Exact Header.tsx gradient) -->
+        <div class="border-b border-[rgba(253,203,155,0.24)] bg-[linear-gradient(90deg,#521515,#6b1d1d,#521515)] text-[#f2f1ec] text-[11px] py-1 px-3 flex items-center justify-between font-medium">
+          <span class="truncate">📦 Air Express to 150+ Countries</span>
+          <span class="font-bold text-amber-300 ml-2">Free over $59</span>
+        </div>
+
+        <!-- Mobile Header with Exact Logo & Hamburger -->
+        <div class="bg-[#faf6ef] border-b border-[#e4d9cf] px-3 py-2 flex items-center justify-between gap-2">
+          <!-- Hamburger -->
+          <button type="button" class="text-stone-800 p-1 -ml-1">
+            <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round">
+              <line x1="4" y1="12" x2="20" y2="12"></line>
+              <line x1="4" y1="6" x2="20" y2="6"></line>
+              <line x1="4" y1="18" x2="20" y2="18"></line>
+            </svg>
+          </button>
+
+          <!-- Exact Logo -->
+          <div class="flex items-center shrink-0">
+            <img src="logo-horizontal.png" alt="IndiaCrafted" class="site-logo-header" width="160" height="44">
+          </div>
+
+          <!-- Compact Search Input -->
+          <div class="flex-1 relative mx-1">
+            <input type="text" placeholder="Search books..." class="w-full bg-white border border-[#cdbfb4] rounded-full pl-6 pr-2 py-1 text-xs text-slate-800 focus:outline-none focus:border-[#6b1d1d]">
+            <svg class="w-3 h-3 text-stone-400 absolute left-2 top-2" fill="none" stroke="currentColor" viewBox="0 0 24 24"><circle cx="11" cy="11" r="8"/><path d="M21 21l-4.35-4.35"/></svg>
+          </div>
+
+          <!-- Cart -->
+          <div class="relative text-[#6b1d1d] shrink-0 p-1">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round">
+              <path d="M6.5 7.5h13l-1.1 12h-11L6.5 7.5ZM9 7.5a3 3 0 0 1 6 0"/>
+            </svg>
+            <span class="absolute -top-1 -right-1 bg-[#6b1d1d] text-white text-[9px] w-3.5 h-3.5 rounded-full flex items-center justify-center font-bold">0</span>
+          </div>
+        </div>
+
+        <!-- Mobile Quick Department Pills -->
+        <div class="bg-[#faf6ef] px-3 py-1.5 border-b border-[#e4d9cf] flex items-center gap-2 overflow-x-auto hide-scrollbar">
+          <button class="bg-[#6b1d1d] text-white px-3 py-1 rounded-full text-xs font-bold shrink-0">📚 All Books</button>
+          <button class="bg-white text-[#6b1d1d] border border-[#e4d9cf] px-3 py-1 rounded-full text-xs font-medium shrink-0">🕉️ Scriptures</button>
+          <button class="bg-white text-stone-800 border border-[#e4d9cf] px-3 py-1 rounded-full text-xs font-medium shrink-0">🎨 Kids &amp; ACK</button>
+          <button class="bg-white text-stone-800 border border-[#e4d9cf] px-3 py-1 rounded-full text-xs font-medium shrink-0">🏛️ History</button>
+          <button class="bg-white text-stone-800 border border-[#e4d9cf] px-3 py-1 rounded-full text-xs font-medium shrink-0">🧘 Yoga</button>
+        </div>
+
+        <!-- Compact Hero Spotlight (Height: 110px) -->
+        <div class="relative bg-[#16100a] text-white p-3 flex items-center justify-between gap-2 overflow-hidden">
+          <img src="books-banner.png" alt="Hero" class="absolute inset-0 w-full h-full object-cover opacity-25">
+          <div class="absolute inset-0 bg-gradient-to-r from-black/90 via-black/75 to-transparent"></div>
+          
+          <div class="space-y-0.5 max-w-[210px] relative z-10">
+            <span class="text-[9px] font-bold text-[#e7bd79] uppercase">55,000+ Indian Titles</span>
+            <h2 class="text-xs font-editorial font-bold text-[#f8e8d1] leading-tight m-0">
+              Timeless Wisdom, Delivered Worldwide.
+            </h2>
+            <div class="text-[9px] text-[#ead6bd]">Air Express to USA, UK &amp; 150+ Countries</div>
+          </div>
+          <div class="bg-black/60 border border-[#b3822a]/40 rounded-lg p-1.5 flex items-center gap-2 shrink-0 relative z-10">
+            <img src="https://storage.googleapis.com/india-crafted-media/products/2707/originals/a088d6bd-0a7e-4224-8647-baa0046d6e8e_medium.webp" alt="ACK" class="w-10 h-13 object-cover rounded">
+            <div class="text-[10px] pr-1">
+              <div class="text-amber-400 font-bold">ACK Boxset</div>
+              <div class="text-[#e7bd79] font-bold text-xs">$19.55</div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Screen 1 Products Grid (Visible Immediately at y = 245px) -->
+        <div class="p-3 bg-white border-b border-[#e4d9cf]">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-bold text-[#6b1d1d] uppercase">🔥 Trending Bestsellers</span>
+            <span class="text-[10px] text-[#6b1d1d] font-semibold">View All →</span>
+          </div>
+
+          <div class="grid grid-cols-2 gap-2.5">
+            <!-- P1 -->
+            <div class="bg-[#fdfbf7] border border-[#e4d9cf] rounded-lg p-2 book-card flex flex-col justify-between">
+              <div>
+                <div class="relative bg-white rounded p-1.5 mb-1.5 flex justify-center shadow-2xs">
+                  <img src="https://storage.googleapis.com/india-crafted-media/products/3107/originals/2c6c5b2c-37d3-4cee-944f-add8422c5f6a_medium.webp" alt="Gita" class="h-28 object-contain rounded">
+                  <span class="absolute top-1 left-1 bg-[#b3822a] text-white text-[8px] font-bold px-1 rounded">Scripture</span>
+                </div>
+                <h4 class="font-bold text-[11px] text-stone-900 line-clamp-1 font-editorial text-xs">Gita for the CEO</h4>
+                <p class="text-[10px] text-[#666666] line-clamp-1">Chaitanya Charan</p>
+              </div>
+              <div class="pt-1.5 mt-1 border-t border-slate-200 flex items-center justify-between">
+                <span class="font-bold text-xs text-[#6b1d1d]">$19.55</span>
+                <button class="bg-[#6b1d1d] text-white text-[10px] px-2 py-0.5 rounded font-bold">Add</button>
+              </div>
+            </div>
+
+            <!-- P2 -->
+            <div class="bg-[#fdfbf7] border border-[#e4d9cf] rounded-lg p-2 book-card flex flex-col justify-between">
+              <div>
+                <div class="relative bg-white rounded p-1.5 mb-1.5 flex justify-center shadow-2xs">
+                  <img src="https://storage.googleapis.com/india-crafted-media/products/2707/originals/a088d6bd-0a7e-4224-8647-baa0046d6e8e_medium.webp" alt="ACK" class="h-28 object-contain rounded">
+                  <span class="absolute top-1 left-1 bg-[#6b1d1d] text-white text-[8px] font-bold px-1 rounded">Kids</span>
+                </div>
+                <h4 class="font-bold text-[11px] text-stone-900 line-clamp-1 font-editorial text-xs">ACK Stories Boxset</h4>
+                <p class="text-[10px] text-[#666666] line-clamp-1">Amar Chitra Katha</p>
+              </div>
+              <div class="pt-1.5 mt-1 border-t border-slate-200 flex items-center justify-between">
+                <span class="font-bold text-xs text-[#6b1d1d]">$19.55</span>
+                <button class="bg-[#6b1d1d] text-white text-[10px] px-2 py-0.5 rounded font-bold">Add</button>
+              </div>
+            </div>
+
+            <!-- P3 -->
+            <div class="bg-[#fdfbf7] border border-[#e4d9cf] rounded-lg p-2 book-card flex flex-col justify-between">
+              <div>
+                <div class="relative bg-white rounded p-1.5 mb-1.5 flex justify-center shadow-2xs">
+                  <img src="https://storage.googleapis.com/india-crafted-media/products/3923/originals/bb0cdb42-2e38-440e-a1d2-16b034e04c33_medium.webp" alt="Ramayana" class="h-28 object-contain rounded">
+                  <span class="absolute top-1 left-1 bg-[#6b1d1d] text-white text-[8px] font-bold px-1 rounded">Epic</span>
+                </div>
+                <h4 class="font-bold text-[11px] text-stone-900 line-clamp-1 font-editorial text-xs">In Footsteps of Rama</h4>
+                <p class="text-[10px] text-[#666666] line-clamp-1">Anand Neelkantan</p>
+              </div>
+              <div class="pt-1.5 mt-1 border-t border-slate-200 flex items-center justify-between">
+                <span class="font-bold text-xs text-[#6b1d1d]">$23.47</span>
+                <button class="bg-[#6b1d1d] text-white text-[10px] px-2 py-0.5 rounded font-bold">Add</button>
+              </div>
+            </div>
+
+            <!-- P4 -->
+            <div class="bg-[#fdfbf7] border border-[#e4d9cf] rounded-lg p-2 book-card flex flex-col justify-between">
+              <div>
+                <div class="relative bg-white rounded p-1.5 mb-1.5 flex justify-center shadow-2xs">
+                  <img src="https://storage.googleapis.com/india-crafted-media/products/3295/originals/86c626b7-1a54-4a61-bf82-03e2d534a736_medium.webp" alt="Yoga" class="h-28 object-contain rounded">
+                  <span class="absolute top-1 left-1 bg-emerald-700 text-white text-[8px] font-bold px-1 rounded">Yoga</span>
+                </div>
+                <h4 class="font-bold text-[11px] text-stone-900 line-clamp-1 font-editorial text-xs">Yoga Mythology</h4>
+                <p class="text-[10px] text-[#666666] line-clamp-1">Devdutt Pattanaik</p>
+              </div>
+              <div class="pt-1.5 mt-1 border-t border-slate-200 flex items-center justify-between">
+                <span class="font-bold text-xs text-[#6b1d1d]">$19.55</span>
+                <button class="bg-[#6b1d1d] text-white text-[10px] px-2 py-0.5 rounded font-bold">Add</button>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Category Orbs Strip with Exact WebP Images -->
+        <div class="p-3 bg-[#fdfbf7] border-b border-[#e4d9cf]">
+          <div class="flex items-center justify-between mb-2">
+            <span class="text-xs font-bold text-stone-900">Shop By Category</span>
+            <span class="text-[10px] text-stone-500">Swipe →</span>
+          </div>
+
+          <div class="flex items-center gap-3 overflow-x-auto hide-scrollbar pb-1">
+            <div class="category-orb shrink-0">
+              <span style="width: 58px; height: 58px;"><img src="categories/books.webp" alt="Books"></span>
+              <strong>Books</strong>
+            </div>
+            <div class="category-orb shrink-0">
+              <span style="width: 58px; height: 58px;"><img src="categories/religion-scriptures.webp" alt="Religion"></span>
+              <strong>Religion</strong>
+            </div>
+            <div class="category-orb shrink-0">
+              <span style="width: 58px; height: 58px;"><img src="categories/childrens-books.webp" alt="Kids"></span>
+              <strong>Children</strong>
+            </div>
+            <div class="category-orb shrink-0">
+              <span style="width: 58px; height: 58px;"><img src="categories/fiction-literature.webp" alt="Fiction"></span>
+              <strong>Fiction</strong>
+            </div>
+            <div class="category-orb shrink-0">
+              <span style="width: 58px; height: 58px;"><img src="categories/indian-history.webp" alt="History"></span>
+              <strong>History</strong>
+            </div>
+            <div class="category-orb shrink-0">
+              <span style="width: 58px; height: 58px;"><img src="categories/new-arrivals.webp" alt="New"></span>
+              <strong>New</strong>
+            </div>
+            <div class="category-orb shrink-0">
+              <span style="width: 58px; height: 58px;"><img src="categories/sale.webp" alt="Sale"></span>
+              <strong>Sale</strong>
+            </div>
+          </div>
+        </div>
+
+        <!-- Mobile Footer with Exact Square Logo Mark -->
+        <div class="p-4 bg-[#efe5d6] text-[#554a3d] text-[10px] text-center space-y-1.5 border-t border-[#e4d9cf]">
+          <div class="flex items-center justify-center gap-2">
+            <img src="logo-square.webp" alt="IndiaCrafted" class="w-6 h-6 object-contain" width="24" height="24">
+            <span class="font-editorial font-bold text-sm text-stone-900">IndiaCrafted</span>
+          </div>
+          <div class="text-[9px] text-[#666666]">Crafted in India. Cherished Worldwide.</div>
+          <div class="text-[9px] text-[#666666] pt-1">© 2026 IndiaCrafted. All rights reserved.</div>
+        </div>
+
+      </div>
+    </div>
+
+  </main>
+
+  <script>
+    function setView(view) {
+      const desktop = document.getElementById('desktop-container');
+      const mobile = document.getElementById('mobile-container');
+      const btnD = document.getElementById('btn-desktop');
+      const btnM = document.getElementById('btn-mobile');
+      const btnC = document.getElementById('btn-compare');
+
+      btnD.className = 'px-4 py-1.5 rounded-lg text-xs font-semibold transition text-slate-300 hover:text-white flex items-center gap-2';
+      btnM.className = 'px-4 py-1.5 rounded-lg text-xs font-semibold transition text-slate-300 hover:text-white flex items-center gap-2';
+      btnC.className = 'px-3.5 py-1.5 rounded-lg text-xs font-semibold transition text-slate-300 hover:text-white flex items-center gap-1.5';
+
+      if (view === 'desktop') {
+        desktop.classList.remove('hidden');
+        mobile.classList.add('hidden');
+        desktop.className = 'w-full max-w-[1400px] bg-[#fdfbf7] text-[#222222] rounded-2xl shadow-2xl overflow-hidden border border-[#cdbfb4]';
+        btnD.className = 'px-4 py-1.5 rounded-lg text-xs font-semibold transition bg-amber-600 text-white shadow-sm flex items-center gap-2';
+      } else if (view === 'mobile') {
+        desktop.classList.add('hidden');
+        mobile.classList.remove('hidden');
+        btnM.className = 'px-4 py-1.5 rounded-lg text-xs font-semibold transition bg-amber-600 text-white shadow-sm flex items-center gap-2';
+      } else if (view === 'compare') {
+        desktop.classList.remove('hidden');
+        mobile.classList.remove('hidden');
+        desktop.className = 'w-full max-w-[900px] bg-[#fdfbf7] text-[#222222] rounded-2xl shadow-2xl overflow-hidden border border-[#cdbfb4] mr-4';
+        btnC.className = 'px-3.5 py-1.5 rounded-lg text-xs font-semibold transition bg-amber-600 text-white shadow-sm flex items-center gap-1.5';
+      }
+    }
+  </script>
+</body>
+</html>
